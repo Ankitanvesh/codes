@@ -1,25 +1,18 @@
 import java.util.*;
  class BUGCAL {
  public static void main(String []args){
-  try {
-     Scanner in=new Scanner(System.in);
+  Scanner in=new Scanner(System.in);
   int T=in.nextInt();
   for(int j=0;j<T;j++){
-  int n=in.nextInt();
-  in.nextLine();
-  String str=in.nextLine();
-  int[] a=new int[n];
-  for(int i=0;i<n;i++)
-  {a[i]=in.nextInt();}
-  if(n==1 && str=="Dee")
-  {   if((a[0]%2)==0)
-      System.out.println("Dee");
-  else System.out.println("Dum");
+  int a=in.nextInt();
+  int b=in.nextInt();        
+     int num=0,i=0;
+  while(a!=0 || b!=0){
+     num=num+((((a%10)+(b%10))%10)*(int)(Math.pow(10,i))) ;
+    a=a/10;
+    b=b/10;
+    i++;
   }
-  else
-      System.out.println("Dum");
-  }
- }catch(Exception e){return;}
- }
- }
-
+  System.out.println(num);
+ }}
+ } 
