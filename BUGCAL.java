@@ -2,8 +2,8 @@ import java.util.*;
  class BUGCAL {
  public static void main(String []args){
   Scanner in=new Scanner(System.in);
-  int T=in.nextInt();
-  for(int j=0;j<T;j++){
+  int t=in.nextInt();
+  for(int j=0;j<t;j++){
   int a=in.nextInt();
   int b=in.nextInt();        
      int num=0,i=0;
